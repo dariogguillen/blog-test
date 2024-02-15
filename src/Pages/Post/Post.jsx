@@ -38,7 +38,7 @@ const Post = () => {
           <p className="card-text">{post.owner?.title || ""} {post.owner?.firstName || ""} {post.owner?.lastName || ""}</p>
           {post.tags ? post.tags.map(tag => (<span class="badge badge-pill badge-primary pill">{tag}</span>)) : <></>}
         </div>
-        <img className="card-img-bottom" src={post.image} alt="Card image cap" />
+        {post.image ? <img className="card-img-bottom" src={post.image} alt="Card image cap" /> : <></>}
       </div>
     </div>
   )
