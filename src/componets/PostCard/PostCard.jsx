@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 const PostCard = ({ post }) => {
-  console.log(post)
 
   const formatDate = (date) => new Date(date).toLocaleDateString()
 
